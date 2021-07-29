@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Pendaftaran</title>
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="pendaftaran.css">
+</head>
+
+<body>
+
+  <div class="contents">
+    <h2>FORM PENDAFTARAN SIDANG PROJECT</h2>
+    <div class="formContent">
+      <form>
+        <div class="form-element">
+          <div class="row"><label>NIM</label><input type="text" id="nim"/></div>
+          <div class="row"><label>Nama</label><input type="text" id="nama"/></div>
+          <div class="row"><label>Proyek</label>
+            <select id="project">
+              <option value="Project 1">Project 1</option>
+              <option value="Project 2">Project 2</option>
+              <option value="Project 3">Project 3</option>
+              <option value="Project 4">Project 4</option>
+            </select>
+          <div class="row"><label class="project-label">Judul Proyek</label><textarea rows="4" cols="50" id="judul"></textarea></div>
+        </div>
+        <div align="center">
+          <button onclick="submit()">Submit</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+      </form>
+    </div>
+      <div>
+        <div id="nim"></div>
+        <div id="nama"></div>
+        <div id="project"></div>
+        <div id="judul"></div>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+    function submit() {
+      var nim = document.getElementById("nim").value;
+      var nama = document.getElementById("nama").value;
+      var project = document.getElementById("project").value;
+      var judul = document.getElementById("judul").value;
+
+      document.getElementById("divnim").innerHTML = nim;
+      document.getElementById("divnama").innerHTML = nama;
+      document.getElementById("divproject").innerHTML = project;
+      document.getElementById("divjudul").innerHTML = judul;
+    }
+  </script>
+
+</body>
+</html>

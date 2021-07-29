@@ -1,0 +1,8 @@
+div ul li{
+	background-color: #d9d9d9;
+	text-align: center;
+	color: black;
+	/*opacity: 0.5;*/
+	font-weight: bold;
+	margin-top: 30px;
+}

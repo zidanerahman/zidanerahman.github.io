@@ -1,0 +1,54 @@
+.contents {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  transform: translate(-10%, -30%);
+  padding: 15px;
+}
+h2 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.form-element {
+  margin: 10px;
+  align-items: left;
+}
+
+label{
+  display: table-cell;
+  text-align: left;
+  padding: 10px;
+}
+
+input {
+  display: table-cell;
+  margin-left: 50px;
+}
+
+.project-label{
+  display: table-cell;
+  margin-left: 50px;
+  margin-top: 0px;
+  transform: translate(-65%, -44%);
+}
+
+select {
+  display: table-cell;
+  margin-left: 50px;
+}
+
+textarea{
+  display: table-cell;
+  margin-left: 50px;
+  margin-top: 30px;
+  transform: translate(-27%, -30%);
+}
+
+div.row{
+  display:table-row;
+}
+
+button {
+  margin-bottom: 40px;
+}
